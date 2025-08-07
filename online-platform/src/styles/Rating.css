@@ -1,0 +1,8 @@
+.rating .stars span {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: gray;
+}
+.rating .stars span.filled {
+  color: gold;
+}

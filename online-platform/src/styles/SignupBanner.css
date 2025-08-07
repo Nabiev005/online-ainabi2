@@ -1,0 +1,106 @@
+/* .signup-banner {
+  background-color: #28a745;
+  padding: 60px 30px;
+  text-align: center;
+  color: white;
+}
+
+.signup-banner h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.signup-buttons .btn-outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-buttons .btn-white {
+  background: white;
+  color: #28a745;
+  border: none;
+  text-decoration: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+} */
+
+
+.signup-banner {
+  background-color: #28a745;
+  padding: 60px 30px;
+  text-align: center;
+  color: white;
+}
+
+.signup-banner h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.signup-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.signup-buttons .btn-outline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.signup-buttons .btn-white {
+  background: white;
+  color: #28a745;
+  border: none;
+  text-decoration: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* ✅ Адаптация */
+@media (max-width: 768px) {
+  .signup-banner {
+    padding: 40px 20px;
+  }
+
+  .signup-banner h2 {
+    font-size: 20px;
+  }
+
+  .signup-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signup-buttons .btn-outline,
+  .signup-buttons .btn-white {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-banner h2 {
+    font-size: 18px;
+  }
+
+  .signup-banner {
+    padding: 30px 15px;
+  }
+}

@@ -1,0 +1,99 @@
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  max-height: 500px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  font-family: sans-serif;
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.chatbot-header {
+  background-color: #4f46e5;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+}
+
+.chatbot-body {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.chatbot-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.chatbot-message {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.chatbot-message.user {
+  background-color: red;
+  align-self: flex-end;
+}
+
+.chatbot-message.bot {
+  background-color: blue;
+  align-self: flex-start;
+}
+
+.chatbot-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.chatbot-input button {
+  margin-left: 8px;
+  padding: 8px 12px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.quick-questions {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  border-bottom: 1px solid #eee;
+  background-color: #f9fafb;
+}
+
+.quick-question {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(0, 193, 0);
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.quick-question:hover {
+  background-color: green;
+}

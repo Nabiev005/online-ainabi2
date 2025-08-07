@@ -1,0 +1,104 @@
+.certificate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f2f2f2;
+  min-height: 100vh;
+}
+
+.certificate {
+  background-color: white;
+  padding: 40px;
+  border: 8px solid #28a745;
+  width: 100%;
+  max-width: 960px; /* 4:3 пропорцияга жакын */
+  aspect-ratio: 4 / 3;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.subtitle, .description, .course-info {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.student-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.certificate-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.date {
+  font-size: 16px;
+}
+
+.signature-block {
+  text-align: right;
+}
+
+.signature {
+  width: 130px;
+  margin-bottom: 8px;
+}
+
+.platform-footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #888;
+}
+
+.download-btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+  .certificate {
+    padding: 20px;
+    font-size: 90%;
+  }
+
+  .certificate-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .signature {
+    width: 100px;
+  }
+
+  .download-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+}

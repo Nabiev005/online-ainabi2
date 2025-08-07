@@ -1,0 +1,79 @@
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.about-text {
+  flex: 1 1 500px;
+  padding-right: 30px;
+}
+
+.about-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about-description {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #fff;
+}
+
+.about-list {
+  margin-top: 20px;
+  padding-left: 20px;
+  font-size: 18px;
+  color: #fff;
+  list-style: none;
+}
+
+.about-footer {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 50%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  animation: zoomIn 1.2s ease;
+}
+
+/* Анимациялар */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
